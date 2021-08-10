@@ -10,11 +10,13 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { FormComponent } from './components/form/form.component';
+import { IframeComponent } from './components/iframe/iframe.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, PersonasComponent, PersonaComponent, HeaderComponent, SidebarComponent, HomeComponent, ProductoComponent, ClientesComponent, FormComponent,
+    AppComponent, PersonasComponent, PersonaComponent, HeaderComponent, SidebarComponent, HomeComponent, ProductoComponent, ClientesComponent, FormComponent, IframeComponent, MenuComponent,
   ],
   imports: [
     BrowserModule
