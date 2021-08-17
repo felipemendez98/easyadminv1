@@ -12,7 +12,7 @@
       <img src="assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
     </div>
     <div class="info">
-      <a href="#" class="d-block">Felipe Mendez</a>
+      <a class="nav-item">Felipe Mendez</a>
     </div>
   </div>
 
@@ -22,124 +22,61 @@
       <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
       <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="nav-icon fas fa-cash-register"></i><i class=""></i>
+        <a [routerLink]="['ventas']" class="nav-link">
+          <i class="nav-icon fas fa-cash-register"></i>
           <p>
             Ventas
-            <i class="right fas fa-angle-left"></i>
           </p>
         </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Tu registadora</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Ver ventas</p>
-            </a>
-          </li>
-        </ul>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a [routerLink]="['inventario']" class="nav-link">
           <i class="nav-icon fas fas fa-boxes"></i>
           <p>
             Inventario
-            <i class="fas fa-angle-left right"></i>
           </p>
         </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Añadir productos</p>
-            </a>
-          </li> 
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>ver productos en stock</p>
-            </a>
-          </li>         
-        </ul>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a [routerLink]="['ofertas']" class="nav-link">
           <i class="nav-icon fas fa-bullhorn"></i>
           <p>
             Ofertas
-            <i class="fas fa-angle-left right"></i>
           </p>
         </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>realizar oferta</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/forms/advanced.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>poner etiqueta a producto</p>
-            </a>
-          </li>
-        </ul>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a [routerLink]="['proveedores']" class="nav-link">
           <i class="nav-icon fas fa-people-carry"></i>
           <p>
             Proveedores
-            <i class="fas fa-angle-left right"></i>
-          </p>
-        </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/tables/jsgrid.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>jsGrid</p>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-header">EXAMPLES</li>
-      <li class="nav-item">
-        <a href="pages/calendar.html" class="nav-link">
-          <i class="nav-icon far fa-calendar-alt"></i>
-          <p>
-            Calendario
-            <span class="badge badge-info right">2</span>
           </p>
         </a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a [routerLink]="['clientes']" class="nav-link">
           <i class="nav-icon fas fa-book"></i>
           <p>
             Clientes
-            <i class="fas fa-angle-left right"></i>
           </p>
         </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="../clientes/clientes.component.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>admin clientes</p>
-            </a>
-          </li>
-        </ul>
       </li>
+      <li class="nav-header">Mas Servicios</li>
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a class="nav-link">
+          <i class="nav-icon far fa-calendar-alt"></i>
+          <p>
+            Calendario
+            <span class="badge badge-info right"><i class="fa fa-lock"></i><span>pronto</span></span>
+          </p>
+        </a>
+      </li>
+      
+      <li class="nav-item ">
+        <a [routerLink]="['']" class="nav-link disabled">
           <i class="nav-icon far fa-plus-square"></i>
           <p>
             Extras
-            <i class="fas fa-angle-left right"></i>
           </p>
         </a>
         <ul class="nav nav-treeview">
@@ -156,7 +93,6 @@
           <i class="nav-icon fas fa-search"></i>
           <p>
             Search
-            <i class="fas fa-angle-left right"></i>
           </p>
         </a>
         <ul class="nav nav-treeview">
