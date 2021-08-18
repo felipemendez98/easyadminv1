@@ -15,12 +15,15 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ProveedoresComponent } from './components/proveedores/proveedores.component';
 import { VentasComponent } from './components/ventas/ventas.component';
 import { OfertasComponent } from './components/ofertas/ofertas.component';
+import { TituloComponent } from './components/titulo/titulo.component';
+import { ListproveedorComponent } from './components/proveedores/listproveedor/listproveedor.component';
+import { DashproveedorComponent } from './components/proveedores/dashproveedor/dashproveedor.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent, PersonasComponent, PersonaComponent, HeaderComponent, SidebarComponent, HomeComponent, ProductoComponent, ClientesComponent, FormComponent, MenuComponent, ProveedoresComponent, VentasComponent, OfertasComponent,
+    AppComponent, PersonasComponent, PersonaComponent, HeaderComponent, SidebarComponent, HomeComponent, ProductoComponent, ClientesComponent, FormComponent, MenuComponent, ProveedoresComponent, VentasComponent, OfertasComponent, TituloComponent, ListproveedorComponent, DashproveedorComponent,
   ],
   imports: [
     BrowserModule,
