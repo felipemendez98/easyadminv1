@@ -1,30 +1,12 @@
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Mis Ventas</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ul class="breadcrumb float-sm-right">
-              <ul class="nav nav-pills ml-auto p-2">
-                <li class="nav-item"><a class="nav-link active" href="{{id_dash}}" data-toggle="tab">DashBoard</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{id_list}}" data-toggle="tab">Listado</a></li>
-              </ul>
-            </ul>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-
-      <div class="tab-content">
-          <!-- contenido aqui-->
-            <div class="tab-pane" id="{{id_dash}}">
-                <p>dashboard</p>
-            </div>
-            <div class="tab-pane" id="{{id_list}}">
-                <p>lista</p>
-            </div>
-        <!-- termina contenido aqui-->  
-    </div>
-
-
+<app-tabs [titulo]="titulo" [id_dash]="id_dash" [id_list]="id_list"></app-tabs>
+<!-- contenido aqui-->
+<div class="tab-content">
+  <div class="tab-pane active" id="dashVentas">
+    <app-dashventas></app-dashventas>
+  </div>
+  <div class="tab-pane" id="listVentas">
+    <app-listventas></app-listventas>
+  </div>
+ 
+</div>
+ <!-- termina contenido aqui-->

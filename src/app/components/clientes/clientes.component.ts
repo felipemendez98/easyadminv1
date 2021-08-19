@@ -7,4 +7,6 @@ import { Component} from '@angular/core';
 })
 export class ClientesComponent{
   titulo = "Mis Clientes";
+  id_dash = "#dashClientes"
+  id_list = "#listClientes"
 }

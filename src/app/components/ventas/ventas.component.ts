@@ -6,6 +6,7 @@ import { Component} from '@angular/core';
   styleUrls: ['./ventas.component.css']
 })
 export class VentasComponent{
+  titulo = "Mis Ventas";
   id_dash = "#dashVentas";
-  id_list = "#listVentas"
+  id_list = "#listVentas";
 }

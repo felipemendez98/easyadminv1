@@ -1,39 +1,11 @@
-<!-- Header -->
-<div class="content-header">
-  <div class="container-fluid">
-    <div class="row mb-2">
-      <div class="col-sm-6">
-        <h1 class="m-0">Mis Proveedores</h1>
-      </div>
-      <!-- /.col -->
-      <div class="col-sm-6">
-        <ul class="breadcrumb float-sm-right">
-          <ul class="nav nav-pills ml-auto p-2">
-            <li class="nav-item">
-              <a class="nav-link active" href="{{id_dash}}" data-toggle="tab"
-                >DashBoard</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{id_list}}" data-toggle="tab">Listado</a>
-            </li>
-          </ul>
-        </ul>
-      </div>
-      <!-- /.col -->
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container-fluid -->
-</div>
-
+<app-tabs [titulo]="titulo" [id_dash]="id_dash" [id_list]="id_list"></app-tabs>
 <!-- contenido aqui-->
 <div class="tab-content">
+  <div class="tab-pane active" id="dashProveedor">
+    <app-dashproveedor></app-dashproveedor>
+  </div>
   <div class="tab-pane" id="listProveedor">
     <app-listproveedor></app-listproveedor>
   </div>
-  <div class="tab-pane active" id="dashProveedor">
-          <app-dashproveedor></app-dashproveedor>
-      </div>
-    
+</div>
 <!-- termina contenido aqui-->

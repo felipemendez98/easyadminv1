@@ -8,5 +8,7 @@ import { Component} from '@angular/core';
 export class OfertasComponent{
 
   titulo = "Mis Ofertas"
+  id_dash = "#dashOferta"
+  id_list = "#listOferta"
 
 }

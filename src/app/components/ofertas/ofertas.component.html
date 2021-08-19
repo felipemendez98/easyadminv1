@@ -1,26 +1,5 @@
- <!-- Content Header (Page header) -->
- <div class="content-header">
-    <div class="container-fluid">
-      <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1 class="m-0">{{titulo}}</h1>
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          <ul class="breadcrumb float-sm-right">
-            <ul class="nav nav-pills ml-auto p-2">
-              <li class="nav-item"><a class="nav-link active" href="#tab_1" data-toggle="tab">Tab 1</a></li>
-              <li class="nav-item"><a class="nav-link" href="#tab_2" data-toggle="tab">Tab 2</a></li>
-            </ul>
-          </ul>
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-
-    <section class="content">
-      <div class="container-fluid">
-        <!-- contenido aqui-->
-          <p>ok</p>
-      <!-- termina contenido aqui-->  
-      </div>
-    </section>
-
+<app-tabs [titulo]="titulo" [id_dash]="id_dash" [id_list]="id_list"></app-tabs>
+<div class="tab-content">
+    <div class="tab-pane" id="dashOferta"><app-dashoferta></app-dashoferta></div>
+    <div class="tab-pane" id="listOferta"><app-listoferta></app-listoferta></div>
+</div>
