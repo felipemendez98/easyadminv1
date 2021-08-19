@@ -8,19 +8,23 @@
           <div class="col-sm-6">
             <ul class="breadcrumb float-sm-right">
               <ul class="nav nav-pills ml-auto p-2">
-                <li class="nav-item"><a class="nav-link active" href="#tab_1" data-toggle="tab">Tab 1</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tab_2" data-toggle="tab">Tab 2</a></li>
+                <li class="nav-item"><a class="nav-link active" href="{{id_dash}}" data-toggle="tab">DashBoard</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{id_list}}" data-toggle="tab">Listado</a></li>
               </ul>
             </ul>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
 
-      <section class="content">
-        <div class="container-fluid">
+      <div class="tab-content">
           <!-- contenido aqui-->
-            <p>ok</p>
+            <div class="tab-pane" id="{{id_dash}}">
+                <p>dashboard</p>
+            </div>
+            <div class="tab-pane" id="{{id_list}}">
+                <p>lista</p>
+            </div>
         <!-- termina contenido aqui-->  
-
+    </div>
 
 
